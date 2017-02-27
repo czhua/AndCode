@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_anim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scorllview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="240dp" />
+
+            <include layout="@layout/cardview"
+                android:id="@+id/cv1"/>
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+            <include layout="@layout/cardview" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+
+        <View
+            android:id="@+id/background_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:elevation="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_iv"
+                android:layout_width="100dp"
+                android:src="@drawable/avatar_1"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/circle"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnimActivity"
+                android:textColor="#3A3A3A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/follow_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="16dp"
+                android:text="Follow" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
