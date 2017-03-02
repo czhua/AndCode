@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.animation.Animation;
 
 import com.chen.andcode.anim.AnimActivity;
+import com.chen.andcode.base.BaseActivity;
+import com.chen.andcode.other.ToolBarActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +21,15 @@ public class MainActivity extends AppCompatActivity {
     public void toAnimActivity(View view) {
         Intent intent = new Intent(this, AnimActivity.class);
         startActivity(intent);
+    }
+
+    public void toToolBarActivity(View view) {
+        Intent intent = new Intent(this, ToolBarActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean isShowBackBtn() {
+        return false;
     }
 }

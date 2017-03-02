@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".anim.AnimActivity" />
         <activity android:name=".anim.RadialGradientActivity" />
+        <activity android:name=".other.ToolBarActivity" />
+        <activity android:name=".other.ToolBarTestActivity"></activity>
     </application>
 
 </manifest>
