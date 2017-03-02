@@ -4,6 +4,11 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+/**
+ * Debug工具类
+ * @author zehua_chen
+ * create at 2017/3/2 19:35
+ */
 public class DebugUtil {
     public static final String TAG = "chan";
     public static final boolean DEBUG = true;
